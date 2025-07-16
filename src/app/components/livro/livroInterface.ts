@@ -1,5 +1,3 @@
-import { Livro } from "./livro";
-
 export interface LivroInterface {
     titulo: string;
     autoria: string;
@@ -11,5 +9,5 @@ export interface LivroInterface {
 export interface generoLiterario {
     id: string;
     value: string;
-    livros: Livro[];
+    livros: LivroInterface[];
 }
