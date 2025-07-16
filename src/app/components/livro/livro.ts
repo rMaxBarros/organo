@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LivroInterface } from './livroInterface';
 
 @Component({
   selector: 'app-livro',
@@ -12,10 +13,11 @@ export class Livro {
     this.livro.favorito = !this.livro.favorito;
   }
   
-  livro = {
+  livro: LivroInterface = {
     titulo: "Uma vida Pequena",
     autoria: "Hanya Yanagihara",
     favorito: false,
+    genero: "Drama",
     imagem: "https://m.media-amazon.com/images/I/810ru7lFZcS._UF894,1000_QL80_.jpg"
   }
 }
